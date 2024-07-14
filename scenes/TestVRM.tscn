@@ -1,0 +1,498 @@
+[gd_scene load_steps=29 format=3 uid="uid://cijsbu2epugne"]
+
+[ext_resource type="Environment" uid="uid://bh80nkth3ui03" path="res://default_environment.tres" id="1_pbcxr"]
+[ext_resource type="Script" path="res://scenes/TestVRM.gd" id="1_vje33"]
+[ext_resource type="PackedScene" uid="uid://br1xmgs318122" path="res://assets/vrm/Bookers_7295/Bookers_7295.tscn" id="3_dv7go"]
+[ext_resource type="Script" path="res://addons/vrm/vrm_spring_bone.gd" id="4_55n25"]
+
+[sub_resource type="Resource" id="Resource_sxkgf"]
+resource_name = "Ponytail01_root"
+script = ExtResource("4_55n25")
+comment = ""
+joint_nodes = PackedStringArray("Ponytail01_root", "Ponytail01", "")
+stiffness_scale = 1.0
+drag_force_scale = 0.4
+hit_radius_scale = 0.01
+gravity_scale = 0.0
+gravity_dir_default = Vector3(0, -1, 0)
+collider_groups = Array[Resource("res://addons/vrm/vrm_collider_group.gd")]([])
+stiffness_force = PackedFloat64Array()
+gravity_power = PackedFloat64Array()
+gravity_dir = PackedVector3Array()
+drag_force = PackedFloat64Array()
+hit_radius = PackedFloat64Array()
+center_bone = ""
+center_node = NodePath("")
+
+[sub_resource type="Resource" id="Resource_qropq"]
+resource_name = "Ponytail01"
+script = ExtResource("4_55n25")
+comment = ""
+joint_nodes = PackedStringArray("Ponytail01", "")
+stiffness_scale = 1.0
+drag_force_scale = 0.4
+hit_radius_scale = 0.01
+gravity_scale = 0.0
+gravity_dir_default = Vector3(0, -1, 0)
+collider_groups = Array[Resource("res://addons/vrm/vrm_collider_group.gd")]([])
+stiffness_force = PackedFloat64Array()
+gravity_power = PackedFloat64Array()
+gravity_dir = PackedVector3Array()
+drag_force = PackedFloat64Array()
+hit_radius = PackedFloat64Array()
+center_bone = ""
+center_node = NodePath("")
+
+[sub_resource type="Resource" id="Resource_jx4tn"]
+resource_name = "Ponytail02_root"
+script = ExtResource("4_55n25")
+comment = ""
+joint_nodes = PackedStringArray("Ponytail02_root", "Ponytail02", "")
+stiffness_scale = 1.0
+drag_force_scale = 0.4
+hit_radius_scale = 0.01
+gravity_scale = 0.0
+gravity_dir_default = Vector3(0, -1, 0)
+collider_groups = Array[Resource("res://addons/vrm/vrm_collider_group.gd")]([])
+stiffness_force = PackedFloat64Array()
+gravity_power = PackedFloat64Array()
+gravity_dir = PackedVector3Array()
+drag_force = PackedFloat64Array()
+hit_radius = PackedFloat64Array()
+center_bone = ""
+center_node = NodePath("")
+
+[sub_resource type="Resource" id="Resource_eg54k"]
+resource_name = "Ponytail02"
+script = ExtResource("4_55n25")
+comment = ""
+joint_nodes = PackedStringArray("Ponytail02", "")
+stiffness_scale = 1.0
+drag_force_scale = 0.4
+hit_radius_scale = 0.01
+gravity_scale = 0.0
+gravity_dir_default = Vector3(0, -1, 0)
+collider_groups = Array[Resource("res://addons/vrm/vrm_collider_group.gd")]([])
+stiffness_force = PackedFloat64Array()
+gravity_power = PackedFloat64Array()
+gravity_dir = PackedVector3Array()
+drag_force = PackedFloat64Array()
+hit_radius = PackedFloat64Array()
+center_bone = ""
+center_node = NodePath("")
+
+[sub_resource type="Resource" id="Resource_b8wkq"]
+resource_name = "Cape_Mid_Root"
+script = ExtResource("4_55n25")
+comment = ""
+joint_nodes = PackedStringArray("Cape_Mid_Root", "Cape_Mid_01", "Cape_Mid_02", "")
+stiffness_scale = 1.0
+drag_force_scale = 0.4
+hit_radius_scale = 0.01
+gravity_scale = 0.0
+gravity_dir_default = Vector3(0, -1, 0)
+collider_groups = Array[Resource("res://addons/vrm/vrm_collider_group.gd")]([])
+stiffness_force = PackedFloat64Array()
+gravity_power = PackedFloat64Array()
+gravity_dir = PackedVector3Array()
+drag_force = PackedFloat64Array()
+hit_radius = PackedFloat64Array()
+center_bone = ""
+center_node = NodePath("")
+
+[sub_resource type="Resource" id="Resource_npnd6"]
+resource_name = "Cape_Left_Root"
+script = ExtResource("4_55n25")
+comment = ""
+joint_nodes = PackedStringArray("Cape_Left_Root", "Cape_Left_01", "Cape_Left_02", "")
+stiffness_scale = 1.0
+drag_force_scale = 0.4
+hit_radius_scale = 0.01
+gravity_scale = 0.0
+gravity_dir_default = Vector3(0, -1, 0)
+collider_groups = Array[Resource("res://addons/vrm/vrm_collider_group.gd")]([])
+stiffness_force = PackedFloat64Array()
+gravity_power = PackedFloat64Array()
+gravity_dir = PackedVector3Array()
+drag_force = PackedFloat64Array()
+hit_radius = PackedFloat64Array()
+center_bone = ""
+center_node = NodePath("")
+
+[sub_resource type="Resource" id="Resource_4e8jh"]
+resource_name = "Cape_Right_Root"
+script = ExtResource("4_55n25")
+comment = ""
+joint_nodes = PackedStringArray("Cape_Right_Root", "Cape_Right_01", "Cape_Right_02", "")
+stiffness_scale = 1.0
+drag_force_scale = 0.4
+hit_radius_scale = 0.01
+gravity_scale = 0.0
+gravity_dir_default = Vector3(0, -1, 0)
+collider_groups = Array[Resource("res://addons/vrm/vrm_collider_group.gd")]([])
+stiffness_force = PackedFloat64Array()
+gravity_power = PackedFloat64Array()
+gravity_dir = PackedVector3Array()
+drag_force = PackedFloat64Array()
+hit_radius = PackedFloat64Array()
+center_bone = ""
+center_node = NodePath("")
+
+[sub_resource type="Resource" id="Resource_euuwd"]
+resource_name = "Cape_Mid_01"
+script = ExtResource("4_55n25")
+comment = ""
+joint_nodes = PackedStringArray("Cape_Mid_01", "Cape_Mid_02", "")
+stiffness_scale = 1.0
+drag_force_scale = 0.4
+hit_radius_scale = 0.01
+gravity_scale = 0.0
+gravity_dir_default = Vector3(0, -1, 0)
+collider_groups = Array[Resource("res://addons/vrm/vrm_collider_group.gd")]([])
+stiffness_force = PackedFloat64Array()
+gravity_power = PackedFloat64Array()
+gravity_dir = PackedVector3Array()
+drag_force = PackedFloat64Array()
+hit_radius = PackedFloat64Array()
+center_bone = ""
+center_node = NodePath("")
+
+[sub_resource type="Resource" id="Resource_oc1ay"]
+resource_name = "Cape_Mid_02"
+script = ExtResource("4_55n25")
+comment = ""
+joint_nodes = PackedStringArray("Cape_Mid_02", "")
+stiffness_scale = 1.0
+drag_force_scale = 0.4
+hit_radius_scale = 0.01
+gravity_scale = 0.0
+gravity_dir_default = Vector3(0, -1, 0)
+collider_groups = Array[Resource("res://addons/vrm/vrm_collider_group.gd")]([])
+stiffness_force = PackedFloat64Array()
+gravity_power = PackedFloat64Array()
+gravity_dir = PackedVector3Array()
+drag_force = PackedFloat64Array()
+hit_radius = PackedFloat64Array()
+center_bone = ""
+center_node = NodePath("")
+
+[sub_resource type="Resource" id="Resource_yrivu"]
+resource_name = "Cape_Left_01"
+script = ExtResource("4_55n25")
+comment = ""
+joint_nodes = PackedStringArray("Cape_Left_01", "Cape_Left_02", "")
+stiffness_scale = 1.0
+drag_force_scale = 0.4
+hit_radius_scale = 0.01
+gravity_scale = 0.0
+gravity_dir_default = Vector3(0, -1, 0)
+collider_groups = Array[Resource("res://addons/vrm/vrm_collider_group.gd")]([])
+stiffness_force = PackedFloat64Array()
+gravity_power = PackedFloat64Array()
+gravity_dir = PackedVector3Array()
+drag_force = PackedFloat64Array()
+hit_radius = PackedFloat64Array()
+center_bone = ""
+center_node = NodePath("")
+
+[sub_resource type="Resource" id="Resource_bgiiq"]
+resource_name = "Cape_Left_02"
+script = ExtResource("4_55n25")
+comment = ""
+joint_nodes = PackedStringArray("Cape_Left_02", "")
+stiffness_scale = 1.0
+drag_force_scale = 0.4
+hit_radius_scale = 0.01
+gravity_scale = 0.0
+gravity_dir_default = Vector3(0, -1, 0)
+collider_groups = Array[Resource("res://addons/vrm/vrm_collider_group.gd")]([])
+stiffness_force = PackedFloat64Array()
+gravity_power = PackedFloat64Array()
+gravity_dir = PackedVector3Array()
+drag_force = PackedFloat64Array()
+hit_radius = PackedFloat64Array()
+center_bone = ""
+center_node = NodePath("")
+
+[sub_resource type="Resource" id="Resource_i2p8e"]
+resource_name = "Cape_Right_01"
+script = ExtResource("4_55n25")
+comment = ""
+joint_nodes = PackedStringArray("Cape_Right_01", "Cape_Right_02", "")
+stiffness_scale = 1.0
+drag_force_scale = 0.4
+hit_radius_scale = 0.01
+gravity_scale = 0.0
+gravity_dir_default = Vector3(0, -1, 0)
+collider_groups = Array[Resource("res://addons/vrm/vrm_collider_group.gd")]([])
+stiffness_force = PackedFloat64Array()
+gravity_power = PackedFloat64Array()
+gravity_dir = PackedVector3Array()
+drag_force = PackedFloat64Array()
+hit_radius = PackedFloat64Array()
+center_bone = ""
+center_node = NodePath("")
+
+[sub_resource type="Resource" id="Resource_m7dd5"]
+resource_name = "Cape_Right_02"
+script = ExtResource("4_55n25")
+comment = ""
+joint_nodes = PackedStringArray("Cape_Right_02", "")
+stiffness_scale = 1.0
+drag_force_scale = 0.4
+hit_radius_scale = 0.01
+gravity_scale = 0.0
+gravity_dir_default = Vector3(0, -1, 0)
+collider_groups = Array[Resource("res://addons/vrm/vrm_collider_group.gd")]([])
+stiffness_force = PackedFloat64Array()
+gravity_power = PackedFloat64Array()
+gravity_dir = PackedVector3Array()
+drag_force = PackedFloat64Array()
+hit_radius = PackedFloat64Array()
+center_bone = ""
+center_node = NodePath("")
+
+[sub_resource type="Resource" id="Resource_naxou"]
+resource_name = "Kings_Cape_Mid_Root"
+script = ExtResource("4_55n25")
+comment = ""
+joint_nodes = PackedStringArray("Kings_Cape_Mid_Root", "Kings_Cape_Mid_01", "Kings_Cape_Mid_02", "")
+stiffness_scale = 1.0
+drag_force_scale = 0.4
+hit_radius_scale = 0.01
+gravity_scale = 0.0
+gravity_dir_default = Vector3(0, -1, 0)
+collider_groups = Array[Resource("res://addons/vrm/vrm_collider_group.gd")]([])
+stiffness_force = PackedFloat64Array()
+gravity_power = PackedFloat64Array()
+gravity_dir = PackedVector3Array()
+drag_force = PackedFloat64Array()
+hit_radius = PackedFloat64Array()
+center_bone = ""
+center_node = NodePath("")
+
+[sub_resource type="Resource" id="Resource_6ss03"]
+resource_name = "Kings_Cape_Left_Root"
+script = ExtResource("4_55n25")
+comment = ""
+joint_nodes = PackedStringArray("Kings_Cape_Left_Root", "Kings_Cape_Left_01", "Kings_Cape_Left_02", "")
+stiffness_scale = 1.0
+drag_force_scale = 0.4
+hit_radius_scale = 0.01
+gravity_scale = 0.0
+gravity_dir_default = Vector3(0, -1, 0)
+collider_groups = Array[Resource("res://addons/vrm/vrm_collider_group.gd")]([])
+stiffness_force = PackedFloat64Array()
+gravity_power = PackedFloat64Array()
+gravity_dir = PackedVector3Array()
+drag_force = PackedFloat64Array()
+hit_radius = PackedFloat64Array()
+center_bone = ""
+center_node = NodePath("")
+
+[sub_resource type="Resource" id="Resource_p1itg"]
+resource_name = "Kings_Cape_Right_Root"
+script = ExtResource("4_55n25")
+comment = ""
+joint_nodes = PackedStringArray("Kings_Cape_Right_Root", "Kings_Cape_Right_01", "Kings_Cape_Right_02", "")
+stiffness_scale = 1.0
+drag_force_scale = 0.4
+hit_radius_scale = 0.01
+gravity_scale = 0.0
+gravity_dir_default = Vector3(0, -1, 0)
+collider_groups = Array[Resource("res://addons/vrm/vrm_collider_group.gd")]([])
+stiffness_force = PackedFloat64Array()
+gravity_power = PackedFloat64Array()
+gravity_dir = PackedVector3Array()
+drag_force = PackedFloat64Array()
+hit_radius = PackedFloat64Array()
+center_bone = ""
+center_node = NodePath("")
+
+[sub_resource type="Resource" id="Resource_usstk"]
+resource_name = "Kings_Cape_Mid_01"
+script = ExtResource("4_55n25")
+comment = ""
+joint_nodes = PackedStringArray("Kings_Cape_Mid_01", "Kings_Cape_Mid_02", "")
+stiffness_scale = 1.0
+drag_force_scale = 0.4
+hit_radius_scale = 0.01
+gravity_scale = 0.0
+gravity_dir_default = Vector3(0, -1, 0)
+collider_groups = Array[Resource("res://addons/vrm/vrm_collider_group.gd")]([])
+stiffness_force = PackedFloat64Array()
+gravity_power = PackedFloat64Array()
+gravity_dir = PackedVector3Array()
+drag_force = PackedFloat64Array()
+hit_radius = PackedFloat64Array()
+center_bone = ""
+center_node = NodePath("")
+
+[sub_resource type="Resource" id="Resource_lgqte"]
+resource_name = "Kings_Cape_Mid_02"
+script = ExtResource("4_55n25")
+comment = ""
+joint_nodes = PackedStringArray("Kings_Cape_Mid_02", "")
+stiffness_scale = 1.0
+drag_force_scale = 0.4
+hit_radius_scale = 0.01
+gravity_scale = 0.0
+gravity_dir_default = Vector3(0, -1, 0)
+collider_groups = Array[Resource("res://addons/vrm/vrm_collider_group.gd")]([])
+stiffness_force = PackedFloat64Array()
+gravity_power = PackedFloat64Array()
+gravity_dir = PackedVector3Array()
+drag_force = PackedFloat64Array()
+hit_radius = PackedFloat64Array()
+center_bone = ""
+center_node = NodePath("")
+
+[sub_resource type="Resource" id="Resource_nj8o3"]
+resource_name = "Kings_Cape_Left_01"
+script = ExtResource("4_55n25")
+comment = ""
+joint_nodes = PackedStringArray("Kings_Cape_Left_01", "Kings_Cape_Left_02", "")
+stiffness_scale = 1.0
+drag_force_scale = 0.4
+hit_radius_scale = 0.01
+gravity_scale = 0.0
+gravity_dir_default = Vector3(0, -1, 0)
+collider_groups = Array[Resource("res://addons/vrm/vrm_collider_group.gd")]([])
+stiffness_force = PackedFloat64Array()
+gravity_power = PackedFloat64Array()
+gravity_dir = PackedVector3Array()
+drag_force = PackedFloat64Array()
+hit_radius = PackedFloat64Array()
+center_bone = ""
+center_node = NodePath("")
+
+[sub_resource type="Resource" id="Resource_q716u"]
+resource_name = "Kings_Cape_Left_02"
+script = ExtResource("4_55n25")
+comment = ""
+joint_nodes = PackedStringArray("Kings_Cape_Left_02", "")
+stiffness_scale = 1.0
+drag_force_scale = 0.4
+hit_radius_scale = 0.01
+gravity_scale = 0.0
+gravity_dir_default = Vector3(0, -1, 0)
+collider_groups = Array[Resource("res://addons/vrm/vrm_collider_group.gd")]([])
+stiffness_force = PackedFloat64Array()
+gravity_power = PackedFloat64Array()
+gravity_dir = PackedVector3Array()
+drag_force = PackedFloat64Array()
+hit_radius = PackedFloat64Array()
+center_bone = ""
+center_node = NodePath("")
+
+[sub_resource type="Resource" id="Resource_manhk"]
+resource_name = "Kings_Cape_Right_01"
+script = ExtResource("4_55n25")
+comment = ""
+joint_nodes = PackedStringArray("Kings_Cape_Right_01", "Kings_Cape_Right_02", "")
+stiffness_scale = 1.0
+drag_force_scale = 0.4
+hit_radius_scale = 0.01
+gravity_scale = 0.0
+gravity_dir_default = Vector3(0, -1, 0)
+collider_groups = Array[Resource("res://addons/vrm/vrm_collider_group.gd")]([])
+stiffness_force = PackedFloat64Array()
+gravity_power = PackedFloat64Array()
+gravity_dir = PackedVector3Array()
+drag_force = PackedFloat64Array()
+hit_radius = PackedFloat64Array()
+center_bone = ""
+center_node = NodePath("")
+
+[sub_resource type="Resource" id="Resource_5na2g"]
+resource_name = "Kings_Cape_Right_02"
+script = ExtResource("4_55n25")
+comment = ""
+joint_nodes = PackedStringArray("Kings_Cape_Right_02", "")
+stiffness_scale = 1.0
+drag_force_scale = 0.4
+hit_radius_scale = 0.01
+gravity_scale = 0.0
+gravity_dir_default = Vector3(0, -1, 0)
+collider_groups = Array[Resource("res://addons/vrm/vrm_collider_group.gd")]([])
+stiffness_force = PackedFloat64Array()
+gravity_power = PackedFloat64Array()
+gravity_dir = PackedVector3Array()
+drag_force = PackedFloat64Array()
+hit_radius = PackedFloat64Array()
+center_bone = ""
+center_node = NodePath("")
+
+[sub_resource type="Resource" id="Resource_muebl"]
+resource_name = "TunicaMonje_01"
+script = ExtResource("4_55n25")
+comment = ""
+joint_nodes = PackedStringArray("TunicaMonje_01", "TunicaMonje_02", "")
+stiffness_scale = 1.0
+drag_force_scale = 0.4
+hit_radius_scale = 0.01
+gravity_scale = 0.0
+gravity_dir_default = Vector3(0, -1, 0)
+collider_groups = Array[Resource("res://addons/vrm/vrm_collider_group.gd")]([])
+stiffness_force = PackedFloat64Array()
+gravity_power = PackedFloat64Array()
+gravity_dir = PackedVector3Array()
+drag_force = PackedFloat64Array()
+hit_radius = PackedFloat64Array()
+center_bone = ""
+center_node = NodePath("")
+
+[sub_resource type="Resource" id="Resource_jyils"]
+resource_name = "TunicaMonje_02"
+script = ExtResource("4_55n25")
+comment = ""
+joint_nodes = PackedStringArray("TunicaMonje_02", "")
+stiffness_scale = 1.0
+drag_force_scale = 0.4
+hit_radius_scale = 0.01
+gravity_scale = 0.0
+gravity_dir_default = Vector3(0, -1, 0)
+collider_groups = Array[Resource("res://addons/vrm/vrm_collider_group.gd")]([])
+stiffness_force = PackedFloat64Array()
+gravity_power = PackedFloat64Array()
+gravity_dir = PackedVector3Array()
+drag_force = PackedFloat64Array()
+hit_radius = PackedFloat64Array()
+center_bone = ""
+center_node = NodePath("")
+
+[node name="TestVrm" type="Node3D"]
+script = ExtResource("1_vje33")
+
+[node name="WorldEnvironment" type="WorldEnvironment" parent="."]
+environment = ExtResource("1_pbcxr")
+
+[node name="Camera3D" type="Camera3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 0.972464, 0.233055, 0, -0.233055, 0.972464, 0, 1.63084, 1.88351)
+
+[node name="DirectionalLight3D" type="DirectionalLight3D" parent="."]
+transform = Transform3D(0.875667, 0.168726, -0.452481, 0.19151, 0.738818, 0.64612, 0.443319, -0.652441, 0.614646, -1.28229, 3.74393, 3.01865)
+
+[node name="VRMs" type="Node3D" parent="."]
+visible = false
+
+[node name="Player" parent="." instance=ExtResource("3_dv7go")]
+spring_bones = Array[ExtResource("4_55n25")]([SubResource("Resource_sxkgf"), SubResource("Resource_qropq"), SubResource("Resource_jx4tn"), SubResource("Resource_eg54k"), SubResource("Resource_b8wkq"), SubResource("Resource_npnd6"), SubResource("Resource_4e8jh"), SubResource("Resource_euuwd"), SubResource("Resource_oc1ay"), SubResource("Resource_yrivu"), SubResource("Resource_bgiiq"), SubResource("Resource_i2p8e"), SubResource("Resource_m7dd5"), SubResource("Resource_naxou"), SubResource("Resource_6ss03"), SubResource("Resource_p1itg"), SubResource("Resource_usstk"), SubResource("Resource_lgqte"), SubResource("Resource_nj8o3"), SubResource("Resource_q716u"), SubResource("Resource_manhk"), SubResource("Resource_5na2g"), SubResource("Resource_muebl"), SubResource("Resource_jyils")])
+
+[node name="Booker_7295 (Headless)" parent="Player/GeneralSkeleton" index="2"]
+visible = false
+
+[node name="Head" parent="Player/GeneralSkeleton" index="3"]
+transform = Transform3D(0.999886, -0.00315919, 0.0148041, 0.00435444, 0.996671, -0.0814149, -0.0144977, 0.08147, 0.99657, 0.00719414, 1.65123, -0.00913907)
+
+[node name="FileDialog" type="FileDialog" parent="."]
+title = "Open a File"
+ok_button_text = "Open"
+file_mode = 0
+access = 2
+filters = PackedStringArray("*.vrm")
+use_native_dialog = true
+
+[connection signal="file_selected" from="FileDialog" to="." method="_on_file_dialog_file_selected"]
+
+[editable path="Player"]

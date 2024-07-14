@@ -1,0 +1,15 @@
+[gd_resource type="Environment" load_steps=3 format=3 uid="uid://bh80nkth3ui03"]
+
+[sub_resource type="PhysicalSkyMaterial" id="PhysicalSkyMaterial_blqq7"]
+
+[sub_resource type="Sky" id="Sky_1rkoc"]
+sky_material = SubResource("PhysicalSkyMaterial_blqq7")
+
+[resource]
+background_mode = 2
+sky = SubResource("Sky_1rkoc")
+ssr_enabled = true
+ssao_enabled = true
+ssil_enabled = true
+sdfgi_enabled = true
+glow_enabled = true
