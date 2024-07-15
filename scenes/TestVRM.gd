@@ -1,18 +1,25 @@
 extends Node3D
 
-@onready var player_mesh : MeshInstance3D = $Player/GeneralSkeleton/Booker_7295
-@onready var player_animation_player : AnimationPlayer = $Player/AnimationPlayer
+@onready var playerContainer : Node3D = $PlayerContainer
+@onready var player : Node3D = $PlayerContainer/Player
 @onready var vrms : Node3D = $VRMs
 @onready var file_dialog : Node = $FileDialog
 var path_external_vrm = ""
+var animationLibrary = preload("res://assets/animations/test.res")
 
 # Called when the node enters the scene tree for the first time.
 func _ready():
-	player_animation_player.play('movement/walk')
+	player.get_node('AnimationPlayer').play('test/jump')
 
 func load_vrm_as_player(vrm_name):
-	var meshNode = vrms.get_node(vrm_name + "/GeneralSkeleton").get_child(0)
-	player_mesh.mesh = meshNode.mesh
+	player.get_node('AnimationPlayer').stop()
+	var newVRM = vrms.get_node(str(vrm_name))
+	var newAnimationPlayer = newVRM.get_node('AnimationPlayer')
+	newAnimationPlayer.add_animation_library("test", animationLibrary)
+	newAnimationPlayer.play('test/jump')
+	player.queue_free()
+	newVRM.reparent(playerContainer)
+	player = newVRM
 
 func save_vrm_from_pc():
 	var gltf: GLTFDocument = GLTFDocument.new()

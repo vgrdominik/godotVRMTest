@@ -1,465 +1,260 @@
-[gd_scene load_steps=29 format=3 uid="uid://cijsbu2epugne"]
+[gd_scene load_steps=24 format=3 uid="uid://cijsbu2epugne"]
 
 [ext_resource type="Environment" uid="uid://bh80nkth3ui03" path="res://default_environment.tres" id="1_pbcxr"]
 [ext_resource type="Script" path="res://scenes/TestVRM.gd" id="1_vje33"]
 [ext_resource type="PackedScene" uid="uid://br1xmgs318122" path="res://assets/vrm/Bookers_7295/Bookers_7295.tscn" id="3_dv7go"]
-[ext_resource type="Script" path="res://addons/vrm/vrm_spring_bone.gd" id="4_55n25"]
+[ext_resource type="AnimationLibrary" uid="uid://0uiu43iqomuv" path="res://assets/animations/movement.res" id="4_s8oij"]
+[ext_resource type="AnimationLibrary" uid="uid://dlnolxlup6ku8" path="res://assets/animations/test.res" id="5_jcapq"]
 
-[sub_resource type="Resource" id="Resource_sxkgf"]
-resource_name = "Ponytail01_root"
-script = ExtResource("4_55n25")
-comment = ""
-joint_nodes = PackedStringArray("Ponytail01_root", "Ponytail01", "")
-stiffness_scale = 1.0
-drag_force_scale = 0.4
-hit_radius_scale = 0.01
-gravity_scale = 0.0
-gravity_dir_default = Vector3(0, -1, 0)
-collider_groups = Array[Resource("res://addons/vrm/vrm_collider_group.gd")]([])
-stiffness_force = PackedFloat64Array()
-gravity_power = PackedFloat64Array()
-gravity_dir = PackedVector3Array()
-drag_force = PackedFloat64Array()
-hit_radius = PackedFloat64Array()
-center_bone = ""
-center_node = NodePath("")
+[sub_resource type="Animation" id="Animation_kkr1e"]
+resource_name = "RESET"
+tracks/0/type = "blend_shape"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("%GeneralSkeleton/Booker_7295:a")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = PackedFloat32Array(0, 1, 0)
+tracks/1/type = "blend_shape"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("%GeneralSkeleton/Booker_7295:e")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = PackedFloat32Array(0, 1, 0)
+tracks/2/type = "blend_shape"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("%GeneralSkeleton/Booker_7295:i")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = PackedFloat32Array(0, 1, 0)
+tracks/3/type = "blend_shape"
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/path = NodePath("%GeneralSkeleton/Booker_7295:o")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/keys = PackedFloat32Array(0, 1, 0)
+tracks/4/type = "blend_shape"
+tracks/4/imported = false
+tracks/4/enabled = true
+tracks/4/path = NodePath("%GeneralSkeleton/Booker_7295:u")
+tracks/4/interp = 1
+tracks/4/loop_wrap = true
+tracks/4/keys = PackedFloat32Array(0, 1, 0)
+tracks/5/type = "blend_shape"
+tracks/5/imported = false
+tracks/5/enabled = true
+tracks/5/path = NodePath("%GeneralSkeleton/Booker_7295:blink_R")
+tracks/5/interp = 1
+tracks/5/loop_wrap = true
+tracks/5/keys = PackedFloat32Array(0, 1, 0)
+tracks/6/type = "blend_shape"
+tracks/6/imported = false
+tracks/6/enabled = true
+tracks/6/path = NodePath("%GeneralSkeleton/Booker_7295:blink_L")
+tracks/6/interp = 1
+tracks/6/loop_wrap = true
+tracks/6/keys = PackedFloat32Array(0, 1, 0)
+tracks/7/type = "blend_shape"
+tracks/7/imported = false
+tracks/7/enabled = true
+tracks/7/path = NodePath("%GeneralSkeleton/Booker_7295:blink_L")
+tracks/7/interp = 1
+tracks/7/loop_wrap = true
+tracks/7/keys = PackedFloat32Array(0, 1, 0)
+tracks/8/type = "blend_shape"
+tracks/8/imported = false
+tracks/8/enabled = true
+tracks/8/path = NodePath("%GeneralSkeleton/Booker_7295:blink_R")
+tracks/8/interp = 1
+tracks/8/loop_wrap = true
+tracks/8/keys = PackedFloat32Array(0, 1, 0)
+tracks/9/type = "blend_shape"
+tracks/9/imported = false
+tracks/9/enabled = true
+tracks/9/path = NodePath("%GeneralSkeleton/Booker_7295:angry")
+tracks/9/interp = 1
+tracks/9/loop_wrap = true
+tracks/9/keys = PackedFloat32Array(0, 1, 0)
+tracks/10/type = "blend_shape"
+tracks/10/imported = false
+tracks/10/enabled = true
+tracks/10/path = NodePath("%GeneralSkeleton/Booker_7295:sorrow")
+tracks/10/interp = 1
+tracks/10/loop_wrap = true
+tracks/10/keys = PackedFloat32Array(0, 1, 0)
+tracks/11/type = "blend_shape"
+tracks/11/imported = false
+tracks/11/enabled = true
+tracks/11/path = NodePath("%GeneralSkeleton/Booker_7295:cara")
+tracks/11/interp = 1
+tracks/11/loop_wrap = true
+tracks/11/keys = PackedFloat32Array(0, 1, 0)
+tracks/12/type = "blend_shape"
+tracks/12/imported = false
+tracks/12/enabled = true
+tracks/12/path = NodePath("%GeneralSkeleton/Booker_7295:joy")
+tracks/12/interp = 1
+tracks/12/loop_wrap = true
+tracks/12/keys = PackedFloat32Array(0, 1, 0)
 
-[sub_resource type="Resource" id="Resource_qropq"]
-resource_name = "Ponytail01"
-script = ExtResource("4_55n25")
-comment = ""
-joint_nodes = PackedStringArray("Ponytail01", "")
-stiffness_scale = 1.0
-drag_force_scale = 0.4
-hit_radius_scale = 0.01
-gravity_scale = 0.0
-gravity_dir_default = Vector3(0, -1, 0)
-collider_groups = Array[Resource("res://addons/vrm/vrm_collider_group.gd")]([])
-stiffness_force = PackedFloat64Array()
-gravity_power = PackedFloat64Array()
-gravity_dir = PackedVector3Array()
-drag_force = PackedFloat64Array()
-hit_radius = PackedFloat64Array()
-center_bone = ""
-center_node = NodePath("")
+[sub_resource type="Animation" id="Animation_4183a"]
+resource_name = "aa"
+tracks/0/type = "blend_shape"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("%GeneralSkeleton/Booker_7295:a")
+tracks/0/interp = 0
+tracks/0/loop_wrap = true
+tracks/0/keys = PackedFloat32Array(0, 1, 0.99999)
 
-[sub_resource type="Resource" id="Resource_jx4tn"]
-resource_name = "Ponytail02_root"
-script = ExtResource("4_55n25")
-comment = ""
-joint_nodes = PackedStringArray("Ponytail02_root", "Ponytail02", "")
-stiffness_scale = 1.0
-drag_force_scale = 0.4
-hit_radius_scale = 0.01
-gravity_scale = 0.0
-gravity_dir_default = Vector3(0, -1, 0)
-collider_groups = Array[Resource("res://addons/vrm/vrm_collider_group.gd")]([])
-stiffness_force = PackedFloat64Array()
-gravity_power = PackedFloat64Array()
-gravity_dir = PackedVector3Array()
-drag_force = PackedFloat64Array()
-hit_radius = PackedFloat64Array()
-center_bone = ""
-center_node = NodePath("")
+[sub_resource type="Animation" id="Animation_ufbmv"]
+resource_name = "angry"
+tracks/0/type = "blend_shape"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("%GeneralSkeleton/Booker_7295:angry")
+tracks/0/interp = 0
+tracks/0/loop_wrap = true
+tracks/0/keys = PackedFloat32Array(0, 1, 0.99999)
 
-[sub_resource type="Resource" id="Resource_eg54k"]
-resource_name = "Ponytail02"
-script = ExtResource("4_55n25")
-comment = ""
-joint_nodes = PackedStringArray("Ponytail02", "")
-stiffness_scale = 1.0
-drag_force_scale = 0.4
-hit_radius_scale = 0.01
-gravity_scale = 0.0
-gravity_dir_default = Vector3(0, -1, 0)
-collider_groups = Array[Resource("res://addons/vrm/vrm_collider_group.gd")]([])
-stiffness_force = PackedFloat64Array()
-gravity_power = PackedFloat64Array()
-gravity_dir = PackedVector3Array()
-drag_force = PackedFloat64Array()
-hit_radius = PackedFloat64Array()
-center_bone = ""
-center_node = NodePath("")
+[sub_resource type="Animation" id="Animation_7btj1"]
+resource_name = "blink"
+tracks/0/type = "blend_shape"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("%GeneralSkeleton/Booker_7295:blink_R")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = PackedFloat32Array(0, 1, 0.99999)
+tracks/1/type = "blend_shape"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("%GeneralSkeleton/Booker_7295:blink_L")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = PackedFloat32Array(0, 1, 0.99999)
 
-[sub_resource type="Resource" id="Resource_b8wkq"]
-resource_name = "Cape_Mid_Root"
-script = ExtResource("4_55n25")
-comment = ""
-joint_nodes = PackedStringArray("Cape_Mid_Root", "Cape_Mid_01", "Cape_Mid_02", "")
-stiffness_scale = 1.0
-drag_force_scale = 0.4
-hit_radius_scale = 0.01
-gravity_scale = 0.0
-gravity_dir_default = Vector3(0, -1, 0)
-collider_groups = Array[Resource("res://addons/vrm/vrm_collider_group.gd")]([])
-stiffness_force = PackedFloat64Array()
-gravity_power = PackedFloat64Array()
-gravity_dir = PackedVector3Array()
-drag_force = PackedFloat64Array()
-hit_radius = PackedFloat64Array()
-center_bone = ""
-center_node = NodePath("")
+[sub_resource type="Animation" id="Animation_egyuy"]
+resource_name = "blinkLeft"
+tracks/0/type = "blend_shape"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("%GeneralSkeleton/Booker_7295:blink_L")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = PackedFloat32Array(0, 1, 0.99999)
 
-[sub_resource type="Resource" id="Resource_npnd6"]
-resource_name = "Cape_Left_Root"
-script = ExtResource("4_55n25")
-comment = ""
-joint_nodes = PackedStringArray("Cape_Left_Root", "Cape_Left_01", "Cape_Left_02", "")
-stiffness_scale = 1.0
-drag_force_scale = 0.4
-hit_radius_scale = 0.01
-gravity_scale = 0.0
-gravity_dir_default = Vector3(0, -1, 0)
-collider_groups = Array[Resource("res://addons/vrm/vrm_collider_group.gd")]([])
-stiffness_force = PackedFloat64Array()
-gravity_power = PackedFloat64Array()
-gravity_dir = PackedVector3Array()
-drag_force = PackedFloat64Array()
-hit_radius = PackedFloat64Array()
-center_bone = ""
-center_node = NodePath("")
+[sub_resource type="Animation" id="Animation_lvwss"]
+resource_name = "blinkRight"
+tracks/0/type = "blend_shape"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("%GeneralSkeleton/Booker_7295:blink_R")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = PackedFloat32Array(0, 1, 0.99999)
 
-[sub_resource type="Resource" id="Resource_4e8jh"]
-resource_name = "Cape_Right_Root"
-script = ExtResource("4_55n25")
-comment = ""
-joint_nodes = PackedStringArray("Cape_Right_Root", "Cape_Right_01", "Cape_Right_02", "")
-stiffness_scale = 1.0
-drag_force_scale = 0.4
-hit_radius_scale = 0.01
-gravity_scale = 0.0
-gravity_dir_default = Vector3(0, -1, 0)
-collider_groups = Array[Resource("res://addons/vrm/vrm_collider_group.gd")]([])
-stiffness_force = PackedFloat64Array()
-gravity_power = PackedFloat64Array()
-gravity_dir = PackedVector3Array()
-drag_force = PackedFloat64Array()
-hit_radius = PackedFloat64Array()
-center_bone = ""
-center_node = NodePath("")
+[sub_resource type="Animation" id="Animation_ptgyg"]
+resource_name = "ee"
+tracks/0/type = "blend_shape"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("%GeneralSkeleton/Booker_7295:e")
+tracks/0/interp = 0
+tracks/0/loop_wrap = true
+tracks/0/keys = PackedFloat32Array(0, 1, 0.99999)
 
-[sub_resource type="Resource" id="Resource_euuwd"]
-resource_name = "Cape_Mid_01"
-script = ExtResource("4_55n25")
-comment = ""
-joint_nodes = PackedStringArray("Cape_Mid_01", "Cape_Mid_02", "")
-stiffness_scale = 1.0
-drag_force_scale = 0.4
-hit_radius_scale = 0.01
-gravity_scale = 0.0
-gravity_dir_default = Vector3(0, -1, 0)
-collider_groups = Array[Resource("res://addons/vrm/vrm_collider_group.gd")]([])
-stiffness_force = PackedFloat64Array()
-gravity_power = PackedFloat64Array()
-gravity_dir = PackedVector3Array()
-drag_force = PackedFloat64Array()
-hit_radius = PackedFloat64Array()
-center_bone = ""
-center_node = NodePath("")
+[sub_resource type="Animation" id="Animation_8g4h8"]
+resource_name = "happy"
+tracks/0/type = "blend_shape"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("%GeneralSkeleton/Booker_7295:joy")
+tracks/0/interp = 0
+tracks/0/loop_wrap = true
+tracks/0/keys = PackedFloat32Array(0, 1, 0.99999)
 
-[sub_resource type="Resource" id="Resource_oc1ay"]
-resource_name = "Cape_Mid_02"
-script = ExtResource("4_55n25")
-comment = ""
-joint_nodes = PackedStringArray("Cape_Mid_02", "")
-stiffness_scale = 1.0
-drag_force_scale = 0.4
-hit_radius_scale = 0.01
-gravity_scale = 0.0
-gravity_dir_default = Vector3(0, -1, 0)
-collider_groups = Array[Resource("res://addons/vrm/vrm_collider_group.gd")]([])
-stiffness_force = PackedFloat64Array()
-gravity_power = PackedFloat64Array()
-gravity_dir = PackedVector3Array()
-drag_force = PackedFloat64Array()
-hit_radius = PackedFloat64Array()
-center_bone = ""
-center_node = NodePath("")
+[sub_resource type="Animation" id="Animation_edsft"]
+resource_name = "ih"
+tracks/0/type = "blend_shape"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("%GeneralSkeleton/Booker_7295:i")
+tracks/0/interp = 0
+tracks/0/loop_wrap = true
+tracks/0/keys = PackedFloat32Array(0, 1, 0.99999)
 
-[sub_resource type="Resource" id="Resource_yrivu"]
-resource_name = "Cape_Left_01"
-script = ExtResource("4_55n25")
-comment = ""
-joint_nodes = PackedStringArray("Cape_Left_01", "Cape_Left_02", "")
-stiffness_scale = 1.0
-drag_force_scale = 0.4
-hit_radius_scale = 0.01
-gravity_scale = 0.0
-gravity_dir_default = Vector3(0, -1, 0)
-collider_groups = Array[Resource("res://addons/vrm/vrm_collider_group.gd")]([])
-stiffness_force = PackedFloat64Array()
-gravity_power = PackedFloat64Array()
-gravity_dir = PackedVector3Array()
-drag_force = PackedFloat64Array()
-hit_radius = PackedFloat64Array()
-center_bone = ""
-center_node = NodePath("")
+[sub_resource type="Animation" id="Animation_322j5"]
 
-[sub_resource type="Resource" id="Resource_bgiiq"]
-resource_name = "Cape_Left_02"
-script = ExtResource("4_55n25")
-comment = ""
-joint_nodes = PackedStringArray("Cape_Left_02", "")
-stiffness_scale = 1.0
-drag_force_scale = 0.4
-hit_radius_scale = 0.01
-gravity_scale = 0.0
-gravity_dir_default = Vector3(0, -1, 0)
-collider_groups = Array[Resource("res://addons/vrm/vrm_collider_group.gd")]([])
-stiffness_force = PackedFloat64Array()
-gravity_power = PackedFloat64Array()
-gravity_dir = PackedVector3Array()
-drag_force = PackedFloat64Array()
-hit_radius = PackedFloat64Array()
-center_bone = ""
-center_node = NodePath("")
+[sub_resource type="Animation" id="Animation_dygvr"]
 
-[sub_resource type="Resource" id="Resource_i2p8e"]
-resource_name = "Cape_Right_01"
-script = ExtResource("4_55n25")
-comment = ""
-joint_nodes = PackedStringArray("Cape_Right_01", "Cape_Right_02", "")
-stiffness_scale = 1.0
-drag_force_scale = 0.4
-hit_radius_scale = 0.01
-gravity_scale = 0.0
-gravity_dir_default = Vector3(0, -1, 0)
-collider_groups = Array[Resource("res://addons/vrm/vrm_collider_group.gd")]([])
-stiffness_force = PackedFloat64Array()
-gravity_power = PackedFloat64Array()
-gravity_dir = PackedVector3Array()
-drag_force = PackedFloat64Array()
-hit_radius = PackedFloat64Array()
-center_bone = ""
-center_node = NodePath("")
+[sub_resource type="Animation" id="Animation_grrf5"]
 
-[sub_resource type="Resource" id="Resource_m7dd5"]
-resource_name = "Cape_Right_02"
-script = ExtResource("4_55n25")
-comment = ""
-joint_nodes = PackedStringArray("Cape_Right_02", "")
-stiffness_scale = 1.0
-drag_force_scale = 0.4
-hit_radius_scale = 0.01
-gravity_scale = 0.0
-gravity_dir_default = Vector3(0, -1, 0)
-collider_groups = Array[Resource("res://addons/vrm/vrm_collider_group.gd")]([])
-stiffness_force = PackedFloat64Array()
-gravity_power = PackedFloat64Array()
-gravity_dir = PackedVector3Array()
-drag_force = PackedFloat64Array()
-hit_radius = PackedFloat64Array()
-center_bone = ""
-center_node = NodePath("")
+[sub_resource type="Animation" id="Animation_atke0"]
 
-[sub_resource type="Resource" id="Resource_naxou"]
-resource_name = "Kings_Cape_Mid_Root"
-script = ExtResource("4_55n25")
-comment = ""
-joint_nodes = PackedStringArray("Kings_Cape_Mid_Root", "Kings_Cape_Mid_01", "Kings_Cape_Mid_02", "")
-stiffness_scale = 1.0
-drag_force_scale = 0.4
-hit_radius_scale = 0.01
-gravity_scale = 0.0
-gravity_dir_default = Vector3(0, -1, 0)
-collider_groups = Array[Resource("res://addons/vrm/vrm_collider_group.gd")]([])
-stiffness_force = PackedFloat64Array()
-gravity_power = PackedFloat64Array()
-gravity_dir = PackedVector3Array()
-drag_force = PackedFloat64Array()
-hit_radius = PackedFloat64Array()
-center_bone = ""
-center_node = NodePath("")
+[sub_resource type="Animation" id="Animation_ijl2v"]
+resource_name = "oh"
+tracks/0/type = "blend_shape"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("%GeneralSkeleton/Booker_7295:o")
+tracks/0/interp = 0
+tracks/0/loop_wrap = true
+tracks/0/keys = PackedFloat32Array(0, 1, 0.99999)
 
-[sub_resource type="Resource" id="Resource_6ss03"]
-resource_name = "Kings_Cape_Left_Root"
-script = ExtResource("4_55n25")
-comment = ""
-joint_nodes = PackedStringArray("Kings_Cape_Left_Root", "Kings_Cape_Left_01", "Kings_Cape_Left_02", "")
-stiffness_scale = 1.0
-drag_force_scale = 0.4
-hit_radius_scale = 0.01
-gravity_scale = 0.0
-gravity_dir_default = Vector3(0, -1, 0)
-collider_groups = Array[Resource("res://addons/vrm/vrm_collider_group.gd")]([])
-stiffness_force = PackedFloat64Array()
-gravity_power = PackedFloat64Array()
-gravity_dir = PackedVector3Array()
-drag_force = PackedFloat64Array()
-hit_radius = PackedFloat64Array()
-center_bone = ""
-center_node = NodePath("")
+[sub_resource type="Animation" id="Animation_l7uts"]
+resource_name = "ou"
+tracks/0/type = "blend_shape"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("%GeneralSkeleton/Booker_7295:u")
+tracks/0/interp = 0
+tracks/0/loop_wrap = true
+tracks/0/keys = PackedFloat32Array(0, 1, 0.99999)
 
-[sub_resource type="Resource" id="Resource_p1itg"]
-resource_name = "Kings_Cape_Right_Root"
-script = ExtResource("4_55n25")
-comment = ""
-joint_nodes = PackedStringArray("Kings_Cape_Right_Root", "Kings_Cape_Right_01", "Kings_Cape_Right_02", "")
-stiffness_scale = 1.0
-drag_force_scale = 0.4
-hit_radius_scale = 0.01
-gravity_scale = 0.0
-gravity_dir_default = Vector3(0, -1, 0)
-collider_groups = Array[Resource("res://addons/vrm/vrm_collider_group.gd")]([])
-stiffness_force = PackedFloat64Array()
-gravity_power = PackedFloat64Array()
-gravity_dir = PackedVector3Array()
-drag_force = PackedFloat64Array()
-hit_radius = PackedFloat64Array()
-center_bone = ""
-center_node = NodePath("")
+[sub_resource type="Animation" id="Animation_3dj5g"]
+resource_name = "relaxed"
+tracks/0/type = "blend_shape"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("%GeneralSkeleton/Booker_7295:cara")
+tracks/0/interp = 0
+tracks/0/loop_wrap = true
+tracks/0/keys = PackedFloat32Array(0, 1, 0.99999)
 
-[sub_resource type="Resource" id="Resource_usstk"]
-resource_name = "Kings_Cape_Mid_01"
-script = ExtResource("4_55n25")
-comment = ""
-joint_nodes = PackedStringArray("Kings_Cape_Mid_01", "Kings_Cape_Mid_02", "")
-stiffness_scale = 1.0
-drag_force_scale = 0.4
-hit_radius_scale = 0.01
-gravity_scale = 0.0
-gravity_dir_default = Vector3(0, -1, 0)
-collider_groups = Array[Resource("res://addons/vrm/vrm_collider_group.gd")]([])
-stiffness_force = PackedFloat64Array()
-gravity_power = PackedFloat64Array()
-gravity_dir = PackedVector3Array()
-drag_force = PackedFloat64Array()
-hit_radius = PackedFloat64Array()
-center_bone = ""
-center_node = NodePath("")
+[sub_resource type="Animation" id="Animation_nyrnk"]
+resource_name = "sad"
+tracks/0/type = "blend_shape"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("%GeneralSkeleton/Booker_7295:sorrow")
+tracks/0/interp = 0
+tracks/0/loop_wrap = true
+tracks/0/keys = PackedFloat32Array(0, 1, 0.99999)
 
-[sub_resource type="Resource" id="Resource_lgqte"]
-resource_name = "Kings_Cape_Mid_02"
-script = ExtResource("4_55n25")
-comment = ""
-joint_nodes = PackedStringArray("Kings_Cape_Mid_02", "")
-stiffness_scale = 1.0
-drag_force_scale = 0.4
-hit_radius_scale = 0.01
-gravity_scale = 0.0
-gravity_dir_default = Vector3(0, -1, 0)
-collider_groups = Array[Resource("res://addons/vrm/vrm_collider_group.gd")]([])
-stiffness_force = PackedFloat64Array()
-gravity_power = PackedFloat64Array()
-gravity_dir = PackedVector3Array()
-drag_force = PackedFloat64Array()
-hit_radius = PackedFloat64Array()
-center_bone = ""
-center_node = NodePath("")
-
-[sub_resource type="Resource" id="Resource_nj8o3"]
-resource_name = "Kings_Cape_Left_01"
-script = ExtResource("4_55n25")
-comment = ""
-joint_nodes = PackedStringArray("Kings_Cape_Left_01", "Kings_Cape_Left_02", "")
-stiffness_scale = 1.0
-drag_force_scale = 0.4
-hit_radius_scale = 0.01
-gravity_scale = 0.0
-gravity_dir_default = Vector3(0, -1, 0)
-collider_groups = Array[Resource("res://addons/vrm/vrm_collider_group.gd")]([])
-stiffness_force = PackedFloat64Array()
-gravity_power = PackedFloat64Array()
-gravity_dir = PackedVector3Array()
-drag_force = PackedFloat64Array()
-hit_radius = PackedFloat64Array()
-center_bone = ""
-center_node = NodePath("")
-
-[sub_resource type="Resource" id="Resource_q716u"]
-resource_name = "Kings_Cape_Left_02"
-script = ExtResource("4_55n25")
-comment = ""
-joint_nodes = PackedStringArray("Kings_Cape_Left_02", "")
-stiffness_scale = 1.0
-drag_force_scale = 0.4
-hit_radius_scale = 0.01
-gravity_scale = 0.0
-gravity_dir_default = Vector3(0, -1, 0)
-collider_groups = Array[Resource("res://addons/vrm/vrm_collider_group.gd")]([])
-stiffness_force = PackedFloat64Array()
-gravity_power = PackedFloat64Array()
-gravity_dir = PackedVector3Array()
-drag_force = PackedFloat64Array()
-hit_radius = PackedFloat64Array()
-center_bone = ""
-center_node = NodePath("")
-
-[sub_resource type="Resource" id="Resource_manhk"]
-resource_name = "Kings_Cape_Right_01"
-script = ExtResource("4_55n25")
-comment = ""
-joint_nodes = PackedStringArray("Kings_Cape_Right_01", "Kings_Cape_Right_02", "")
-stiffness_scale = 1.0
-drag_force_scale = 0.4
-hit_radius_scale = 0.01
-gravity_scale = 0.0
-gravity_dir_default = Vector3(0, -1, 0)
-collider_groups = Array[Resource("res://addons/vrm/vrm_collider_group.gd")]([])
-stiffness_force = PackedFloat64Array()
-gravity_power = PackedFloat64Array()
-gravity_dir = PackedVector3Array()
-drag_force = PackedFloat64Array()
-hit_radius = PackedFloat64Array()
-center_bone = ""
-center_node = NodePath("")
-
-[sub_resource type="Resource" id="Resource_5na2g"]
-resource_name = "Kings_Cape_Right_02"
-script = ExtResource("4_55n25")
-comment = ""
-joint_nodes = PackedStringArray("Kings_Cape_Right_02", "")
-stiffness_scale = 1.0
-drag_force_scale = 0.4
-hit_radius_scale = 0.01
-gravity_scale = 0.0
-gravity_dir_default = Vector3(0, -1, 0)
-collider_groups = Array[Resource("res://addons/vrm/vrm_collider_group.gd")]([])
-stiffness_force = PackedFloat64Array()
-gravity_power = PackedFloat64Array()
-gravity_dir = PackedVector3Array()
-drag_force = PackedFloat64Array()
-hit_radius = PackedFloat64Array()
-center_bone = ""
-center_node = NodePath("")
-
-[sub_resource type="Resource" id="Resource_muebl"]
-resource_name = "TunicaMonje_01"
-script = ExtResource("4_55n25")
-comment = ""
-joint_nodes = PackedStringArray("TunicaMonje_01", "TunicaMonje_02", "")
-stiffness_scale = 1.0
-drag_force_scale = 0.4
-hit_radius_scale = 0.01
-gravity_scale = 0.0
-gravity_dir_default = Vector3(0, -1, 0)
-collider_groups = Array[Resource("res://addons/vrm/vrm_collider_group.gd")]([])
-stiffness_force = PackedFloat64Array()
-gravity_power = PackedFloat64Array()
-gravity_dir = PackedVector3Array()
-drag_force = PackedFloat64Array()
-hit_radius = PackedFloat64Array()
-center_bone = ""
-center_node = NodePath("")
-
-[sub_resource type="Resource" id="Resource_jyils"]
-resource_name = "TunicaMonje_02"
-script = ExtResource("4_55n25")
-comment = ""
-joint_nodes = PackedStringArray("TunicaMonje_02", "")
-stiffness_scale = 1.0
-drag_force_scale = 0.4
-hit_radius_scale = 0.01
-gravity_scale = 0.0
-gravity_dir_default = Vector3(0, -1, 0)
-collider_groups = Array[Resource("res://addons/vrm/vrm_collider_group.gd")]([])
-stiffness_force = PackedFloat64Array()
-gravity_power = PackedFloat64Array()
-gravity_dir = PackedVector3Array()
-drag_force = PackedFloat64Array()
-hit_radius = PackedFloat64Array()
-center_bone = ""
-center_node = NodePath("")
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_2xhsg"]
+_data = {
+"RESET": SubResource("Animation_kkr1e"),
+"aa": SubResource("Animation_4183a"),
+"angry": SubResource("Animation_ufbmv"),
+"blink": SubResource("Animation_7btj1"),
+"blinkLeft": SubResource("Animation_egyuy"),
+"blinkRight": SubResource("Animation_lvwss"),
+"ee": SubResource("Animation_ptgyg"),
+"happy": SubResource("Animation_8g4h8"),
+"ih": SubResource("Animation_edsft"),
+"lookDown": SubResource("Animation_322j5"),
+"lookLeft": SubResource("Animation_dygvr"),
+"lookRight": SubResource("Animation_grrf5"),
+"lookUp": SubResource("Animation_atke0"),
+"oh": SubResource("Animation_ijl2v"),
+"ou": SubResource("Animation_l7uts"),
+"relaxed": SubResource("Animation_3dj5g"),
+"sad": SubResource("Animation_nyrnk")
+}
 
 [node name="TestVrm" type="Node3D"]
 script = ExtResource("1_vje33")
@@ -476,14 +271,22 @@ transform = Transform3D(0.875667, 0.168726, -0.452481, 0.19151, 0.738818, 0.6461
 [node name="VRMs" type="Node3D" parent="."]
 visible = false
 
-[node name="Player" parent="." instance=ExtResource("3_dv7go")]
-spring_bones = Array[ExtResource("4_55n25")]([SubResource("Resource_sxkgf"), SubResource("Resource_qropq"), SubResource("Resource_jx4tn"), SubResource("Resource_eg54k"), SubResource("Resource_b8wkq"), SubResource("Resource_npnd6"), SubResource("Resource_4e8jh"), SubResource("Resource_euuwd"), SubResource("Resource_oc1ay"), SubResource("Resource_yrivu"), SubResource("Resource_bgiiq"), SubResource("Resource_i2p8e"), SubResource("Resource_m7dd5"), SubResource("Resource_naxou"), SubResource("Resource_6ss03"), SubResource("Resource_p1itg"), SubResource("Resource_usstk"), SubResource("Resource_lgqte"), SubResource("Resource_nj8o3"), SubResource("Resource_q716u"), SubResource("Resource_manhk"), SubResource("Resource_5na2g"), SubResource("Resource_muebl"), SubResource("Resource_jyils")])
+[node name="PlayerContainer" type="Node3D" parent="."]
 
-[node name="Booker_7295 (Headless)" parent="Player/GeneralSkeleton" index="2"]
+[node name="Player" parent="PlayerContainer" instance=ExtResource("3_dv7go")]
+
+[node name="Booker_7295 (Headless)" parent="PlayerContainer/Player/GeneralSkeleton" index="2"]
 visible = false
 
-[node name="Head" parent="Player/GeneralSkeleton" index="3"]
-transform = Transform3D(0.999886, -0.00315919, 0.0148041, 0.00435444, 0.996671, -0.0814149, -0.0144977, 0.08147, 0.99657, 0.00719414, 1.65123, -0.00913907)
+[node name="Head" parent="PlayerContainer/Player/GeneralSkeleton" index="3"]
+transform = Transform3D(0.990388, -0.126785, -0.0552899, 0.107565, 0.95729, -0.268376, 0.0869544, 0.259849, 0.961726, -0.0975368, 1.35148, 0.198581)
+
+[node name="AnimationPlayer" parent="PlayerContainer/Player" index="2"]
+libraries = {
+"": SubResource("AnimationLibrary_2xhsg"),
+"movement": ExtResource("4_s8oij"),
+"test": ExtResource("5_jcapq")
+}
 
 [node name="FileDialog" type="FileDialog" parent="."]
 title = "Open a File"
@@ -495,4 +298,4 @@ use_native_dialog = true
 
 [connection signal="file_selected" from="FileDialog" to="." method="_on_file_dialog_file_selected"]
 
-[editable path="Player"]
+[editable path="PlayerContainer/Player"]
